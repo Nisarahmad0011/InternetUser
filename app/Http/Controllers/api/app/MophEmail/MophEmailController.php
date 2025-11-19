@@ -76,7 +76,7 @@ class MophEmailController extends Controller
 
         return response()->json([
             'exists' => $exists,
-            'message' => $exists ? 'This EMAIL Address is Already Registered! Please Try Another One!' : ''
+            'message' => $exists ? 'This email address is already taken!' : ''
         ]);
     }
 }
